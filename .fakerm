@@ -1,0 +1,12 @@
+if [ ! -d ~/.rm ]
+then
+	mkdir ~/.rm
+fi
+
+newDir=~/.rm/`date +%Y.%m.%d.%H:%M`
+
+if [ ! -d $newDir ]
+then
+	mkdir $newDir
+fi
+mv $@ $newDir
