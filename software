@@ -1,0 +1,32 @@
+ppa:
+	fcitx\sogou
+	google-chrome
+download:
+	VMware-Workstation
+	wps
+	mendeley
+	seafile
+	kuaipan
+
+system tools:
+	axel
+	terminator
+	qemu
+	VirtManager
+indicator:
+	indicator-china-weather
+	chinese-calendar
+coding:
+	git
+	subversion
+	vim
+	exuberant-ctags
+	cscope
+	retext
+	xdot
+build:
+	cmake
+	autoconf
+	build-essential
+	g++-multilib
+	lib32z1 -- 32bits libs
