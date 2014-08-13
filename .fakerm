@@ -9,4 +9,4 @@ if [ ! -d $newDir ]
 then
 	mkdir $newDir
 fi
-mv $@ $newDir
+mv "$@" $newDir
