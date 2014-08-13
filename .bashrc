@@ -1,4 +1,6 @@
 #############################################xuyongjian#######################################
+alias sl='ls'
+alias su='expect ~/.su.expect'
 alias understand='/home/xyj/backup/scitools/bin/linux64/understand &'
 alias rm='bash ~/.fakerm'
 alias testbash='bash ~/.testbash.py'
@@ -6,11 +8,12 @@ alias lxr='bash ~/.lxr_3.12.sh'
 alias Open=gnome-open
 alias klee-use='source /home/xyj/research/klee-github/source_this_before_run'
 #alias okklee='source /home/xyj/research/klee-guided/source_this_before_run'
-alias kint-use='source /home/xyj/research/kint-play/source_this_before_run'
+alias kint-use='source /home/xyj/research/kint-play/envsetup_use.sh'
 export PATH=$PATH:/home/xyj/research/cloud9-play/depot_tools
 #export C_INCLUDE_PATH=/usr/include/x86_64-linux-gnu:$C_INCLUDE_PATH
 #----------------------------------
-TERM=xterm-color
+#TERM=xterm-color
+TERM=screen-256color
 PROMPT_COMMAND='if [ $? != 0 ]
 then
 	echo -e "\033[31;49;1m [ERROR] \033[39;49;0m"
