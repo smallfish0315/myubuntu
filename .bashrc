@@ -1,5 +1,6 @@
 #############################################xuyongjian#######################################
 alias sl='ls'
+alias s='ls'
 alias su='expect ~/.su.expect'
 alias understand='/home/xyj/backup/scitools/bin/linux64/understand &'
 alias rm='bash ~/.fakerm'

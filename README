@@ -9,3 +9,7 @@ Some config files of xyj's Ubuntu
 .lxr_3.12.sh
 
 .gitconfig
+
+## install
+
+./setup.sh
