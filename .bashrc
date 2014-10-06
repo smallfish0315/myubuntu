@@ -3,7 +3,12 @@ alias sl='ls'
 alias s='ls'
 alias su='expect ~/.su.expect'
 alias understand='/home/xyj/backup/scitools/bin/linux64/understand &'
-alias rm='bash ~/.fakerm'
+alias rm='fun() { 
+newDir=~/.rm/`date +%Y.%m.%d.%H:%M`
+[ -d $newDir ] || mkdir -p $newDir
+mv "$@" $newDir
+}
+fun '
 alias testbash='bash ~/.testbash.py'
 alias lxr='bash ~/.lxr_3.12.sh'
 alias Open=gnome-open
