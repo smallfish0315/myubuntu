@@ -1,0 +1,12 @@
+IdentityFile ~/.ssh/id_rsa_github
+
+Host hegaoji
+	HostName 124.16.141.169
+	IdentityFile ~/.ssh/id_rsa_32
+Host kvm
+	HostName 192.168.0.103
+	User root
+
+Host xqx
+	HostName 192.168.0.133
+	User xqx
