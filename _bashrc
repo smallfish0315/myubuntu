@@ -9,7 +9,6 @@ mv "$@" $newDir
 }
 fun '
 alias testbash='bash ~/.testbash.py'
-alias lxr='bash ~/.lxr_3.12.sh'
 alias Open=gnome-open
 alias klee-use='source /home/xyj/research/klee-github/source_this_before_run'
 #alias okklee='source /home/xyj/research/klee-guided/source_this_before_run'
