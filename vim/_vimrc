@@ -224,3 +224,8 @@ filetype plugin indent on
 set completeopt=longest,menu
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+
+" ----------
+" NERD_Commenter
+" ----------
+let mapleader=","
