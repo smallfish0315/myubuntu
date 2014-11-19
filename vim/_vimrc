@@ -196,12 +196,25 @@ map <F6> :call RunResult()<CR>
 " ====================
 
 " ----------
+" NERDTree
+" ----------
+let g:NERDTree_title='NERD Tree'
+
+function! NERDTree_Start()
+	exec 'NERDTree'
+endfunction
+function! NERDTree_IsValid()
+	return 1
+endfunction
+
+" ----------
 " WindowsManager
 " ----------
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let g:winManagerWidth = 30
 let g:winManagerWindowLayout='FileExplorer|TagList'
+let g:winManagerWindowLayout='NERDTree|TagList'
 nmap wm :WMToggle<cr>
 
 " ----------
