@@ -1,6 +1,7 @@
 #############################################xuyongjian#######################################
 alias sl='ls'
 alias s='ls'
+alias df='df -h'
 alias understand='/home/xyj/backup/scitools/bin/linux64/understand &'
 alias rm='fun() { 
 newDir=~/.rm/`date +%Y.%m.%d.%H:%M`
