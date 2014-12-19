@@ -1,5 +1,6 @@
 #############################################xuyongjian#######################################
 alias sl='ls'
+alias ta='tmux attach'
 alias s='ls'
 alias df='df -h'
 alias understand='/home/xyj/backup/scitools/bin/linux64/understand &'
@@ -11,7 +12,7 @@ mv "$@" $newDir
 fun '
 alias testbash='bash ~/.testbash.py'
 alias Open=gnome-open
-alias klee-use='source /home/xyj/research/klee-github/source_this_before_run'
+alias klee-use='source /home/xyj/research/klee/source_this_before_run'
 #alias okklee='source /home/xyj/research/klee-guided/source_this_before_run'
 alias kint-use='source /home/xyj/research/kint-play/envsetup_use.sh'
 export PATH=$PATH:/home/xyj/research/cloud9-play/depot_tools
