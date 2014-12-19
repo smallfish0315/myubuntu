@@ -1,1 +1,0 @@
-/home/xyj/myvim/.vim
