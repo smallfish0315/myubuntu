@@ -5,7 +5,7 @@ alias s='ls'
 alias df='df -h'
 alias understand='/home/xyj/backup/scitools/bin/linux64/understand &'
 alias rm='fun() { 
-newDir=~/.rm/`date +%Y.%m.%d.%H:%M`
+newDir=~/.rm/`date +%Y.%m.%d.%H:%M:%S`
 [ -d $newDir ] || mkdir -p $newDir
 mv "$@" $newDir
 }
@@ -69,6 +69,7 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
+    screen-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -139,3 +140,18 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# show git branch
+parse_git_branch() {
+git branch 2> /dev/null |sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+parse_git_tag() {
+git describe --tag 2>/dev/null
+}
+git_info() {
+if [ -n "$(parse_git_branch)" ]; then
+	info=$(parse_git_branch);
+	echo "[branch: $info]";
+fi
+}
+PS1="\[\033[01;32m\]$(git_info)\[\033[00m\]${PS1}"
